@@ -5,21 +5,35 @@ var patsstore1stnP = {
   MinCust: 23,
   MaxCust: 65,
   AvgCookieSale: 6.3,
-  getRandomNumsCust: function(){
+  avgCookiesADay:[],
+  getRandomNums: function(){
     return Math.floor(Math.random() * (this.MaxCust - this.MinCust)) + this.MinCust;
-  getAvgNumsCust: function(){
-    return Math.floor(Math.)
-  }
   },
+  counts15Times: function(){
+  for (var i = 0; i < 15; i++ ){
+    var avgCookieHr = this.getRandomNums() * this.AvgCookieSale
+      this.avgCookiesADay.push(Math.floor(avgCookieHr))
+    }
+  }
 };
-console.log(patsstore1stnP.getRandomNumsCust());
-
+patsstore1stnP.counts15Times()
+console.log(patsstore1stnP.avgCookiesADay);
+var cookiesanhourUL = document.getElementById('cookiesanhour');
+console.log(cookiesanhourUL);
+var cookiesanhourLi;
+for (var i = 0; i < patsstore1stnP.avgCookiesADay.length; i++){
+  cookiesanhourLi = document.createElement('li');
+  cookiesanhourLi.setAttribute('class', 'avgCookiesADay');
+  cookiesanhourLi.textContent = patsstore1stnP.avgCookiesADay[i];
+  cookiesanhourUL.appendChild(cookiesanhourLi);
+}
 var patsstoreSeaTacA = {
   location: 'SeaTac Airport',
   MinCust: 3,
   MaxCust:24,
   AvgCookieSale: 1.2,
 };
+
 
 var patsstoreSeattleC = {
   location: 'Seattle Center',
