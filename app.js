@@ -1,5 +1,5 @@
 'use strict';
-
+var hours = ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12pm;', '1pm:', '2pm:', '3pm:', '4pm:',  '5pm:', '6pm:', '7pm:', '8pm:'];
 var patsstore1stnP = {
   location: '1st and Pike',
   MinCust: 23,
@@ -10,8 +10,8 @@ var patsstore1stnP = {
     return Math.floor(Math.random() * (this.MaxCust - this.MinCust)) + this.MinCust;
   },
   counts15Times: function(){
-  for (var i = 0; i < 15; i++ ){
-    var avgCookieHr = this.getRandomNums() * this.AvgCookieSale
+    for (var i = 0; i < 15; i++ ){
+      var avgCookieHr = this.getRandomNums() * this.AvgCookieSale
       this.avgCookiesADay.push(Math.floor(avgCookieHr))
     }
   }
@@ -24,7 +24,7 @@ var cookiesanhourLi;
 for (var i = 0; i < patsstore1stnP.avgCookiesADay.length; i++){
   cookiesanhourLi = document.createElement('li');
   cookiesanhourLi.setAttribute('class', 'avgCookiesADay');
-  cookiesanhourLi.textContent = patsstore1stnP.avgCookiesADay[i];
+  cookiesanhourLi.textContent = hours[i]  + ' ' + patsstore1stnP.avgCookiesADay[i];
   cookiesanhourUL.appendChild(cookiesanhourLi);
 }
 var patsstoreSeaTacA = {
