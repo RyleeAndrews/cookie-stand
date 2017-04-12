@@ -1,12 +1,6 @@
 body {
   background-color: orange;
 }
-div {
-  font-family: georgia,serif;
-  display: inline;
-  margin-right: 7px;
-  background-color: lightblue;
-}
 li {
   font-family:Arial,sans-serif;
   color:red;
@@ -17,11 +11,6 @@ h1, h2 {
   text-decoration: underline;
   color:indigo;
   background-color: yellow;
-}
-img {
-  height:auto;
-  width:75%;
-  margin:20px;
 }
 img#salmon {
   height: auto;
