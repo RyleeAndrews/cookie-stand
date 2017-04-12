@@ -1,12 +1,7 @@
 body {
   background-color: orange;
 }
-li {
-  font-family:Arial,sans-serif;
-  color:red;
-  background-color: green;
-}
-h1, h2 {
+h1 {
   font-family: 'Montaga',serif;
   text-decoration: underline;
   color:indigo;
