@@ -40,7 +40,7 @@ CookieStoreList.prototype.getHourlyTotals = function(){
     tableFooter.textContent = 'Total';
     tableRow.appendChild(tableFooter);
 
-    for (var i = 0; i < 17; i++){
+    for (var i = 0; i < hours.length; i++){
       var getRandomNums = Math.floor(Math.random() * (this.maxCust - this.minCust)) + this.minCust;
       var totalCookies = Math.floor(getRandomNums * this.avgCookieSale);
         var tableFooter = document.createElement('td');
@@ -71,7 +71,7 @@ CookieStore.prototype.getTable = function() {
   var tableData = document.createElement('td');
   tableData.textContent = this.name;
   tableRow.appendChild(tableData);
-  for (var i = 0; i < 15;i++ ){
+  for (var i = 0; i < hours.length - 2;i++ ){
     var tableData = document.createElement('td')
     tableData.textContent = this.cookiesAnHour[i];
     tableRow.appendChild(tableData);
@@ -86,7 +86,7 @@ CookieStore.prototype.getTableHead = function() {
   var tableRow = document.createElement('tr');
   var tableHead = document.createElement('th');
   table.appendChild(tableHead);
-  for (var i = 0; i < 17; i++){
+  for (var i = 0; i < hours.length; i++){
     tableHead = document.createElement('th');
     tableHead.textContent = hours[i];
     tableRow.appendChild(tableHead);
@@ -94,7 +94,7 @@ CookieStore.prototype.getTableHead = function() {
   table.appendChild(tableRow);
 }
 CookieStore.prototype.getCookiesAnHour = function(){
-  for (var i = 0; i < 15;i++){
+  for (var i = 0; i < hours.length - 2;i++){
     var getRandomNums = Math.floor(Math.random() * (this.maxCust - this.minCust)) + this.minCust;
     var totalCookies = Math.floor(getRandomNums * this.avgCookieSale);
     this.cookiesAnHour.push(totalCookies);
@@ -106,7 +106,7 @@ CookieStore.prototype.getTableFooter = function() {
   var tableRow = document.createElement('tr');
   var tableFooter = document.createElement('tf');
   tableRow.appendChild(tableFooter);
-  for (var i = 0; i < 17; i++){
+  for (var i = 0; i < hours.length; i++){
     var getRandomNums = Math.floor(Math.random() * (this.maxCust - this.minCust)) + this.minCust;
     var totalCookies = Math.floor(getRandomNums * this.avgCookieSale);
     tableFooter = document.createElement('tf');
