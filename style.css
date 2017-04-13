@@ -17,3 +17,13 @@ img#salmon {
   height: auto;
   width:100%;
 }
+tr {
+  background-color: red;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+th {
+  text-transform: uppercase;
+  font-size:80%;
+}
