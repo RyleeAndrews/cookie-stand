@@ -139,6 +139,10 @@ function handleLocationCreateSubmit(submit){
   minCust = parseInt(minCust);
   var avgCookieSale = form.avgCookieSale.value;
   avgCookieSale = parseInt(avgCookieSale);
+  form.storeName.value = '';
+  form.maxCust.value = '';
+  form.minCust.value = '';
+  form.avgCookieSale.value = '';
   var cookieStore = new CookieStore(name,maxCust,minCust,avgCookieSale);
   cookieStore.getTable();
 }
