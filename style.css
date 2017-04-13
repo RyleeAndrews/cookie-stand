@@ -1,12 +1,6 @@
 body {
   background-color: orange;
 }
-div {
-  font-family: georgia,serif;
-  display: inline;
-  margin-right: 7px;
-  background-color: lightblue;
-}
 h1,h2 {
   font-family: 'Montaga',serif;
   text-decoration: underline;
@@ -21,6 +15,7 @@ tr {
   color:indigo;
   padding: 2px 3px 2px 2px;
   text-align: center;
+  text-transform: uppercase;
 }
 th {
   color:red;
@@ -28,6 +23,7 @@ th {
   font-size: 80%;
   border-style: groove;
   border-color: indigo;
+  text-transform: uppercase;
 }
 table {
   letter-spacing: 0.1em;
