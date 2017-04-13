@@ -39,7 +39,6 @@ CookieStoreList.prototype.getHourlyTotals = function(){
   var tableFooter = document.createElement('td');
   tableFooter.textContent = 'Total';
   tableRow.appendChild(tableFooter);
-
   for (var i = 0; i < hours.length; i++){
     var getRandomNums = Math.floor(Math.random() * (this.maxCust - this.minCust)) + this.minCust;
     var totalCookies = Math.floor(getRandomNums * this.avgCookieSale);
@@ -64,6 +63,7 @@ var seaTac = new CookieStore('SeaTac Airport', 3, 24, 1.2);
 var seaCent = new CookieStore('Seattle Center', 11, 38, 3.7);
 var capHill = new CookieStore('Capitol Hill', 20, 38, 2.3);
 var alKi = new CookieStore('Alki', 2, 16, 4.6);
+
 CookieStore.prototype.getTable = function() {
   this.getCookiesAnHour();
   var table = document.getElementById('table');
@@ -122,8 +122,3 @@ seaTac.getTable()
 seaCent.getTable()
 capHill.getTable()
 alKi.getTable()
-
-
-var storesList = new CookieStoreList([firstNPike, seaTac, seaCent, capHill, alKi]);
-
-storesList.getHourlyTotals();
