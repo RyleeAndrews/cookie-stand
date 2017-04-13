@@ -1,7 +1,13 @@
 body {
   background-color: orange;
 }
-h1 {
+div {
+  font-family: georgia,serif;
+  display: inline;
+  margin-right: 7px;
+  background-color: lightblue;
+}
+h1,h2 {
   font-family: 'Montaga',serif;
   text-decoration: underline;
   color:indigo;
