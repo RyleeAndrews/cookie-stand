@@ -17,3 +17,24 @@ img#salmon {
   height: auto;
   width:100%;
 }
+tr {
+  color:indigo;
+  padding: 2px 3px 2px 2px;
+  text-align: center;
+}
+th {
+  color:red;
+  text-align: center;
+  font-size: 80%;
+  border-style: groove;
+  border-color: indigo;
+}
+table {
+  letter-spacing: 0.1em;
+  border-collapse: collapse;
+  background-color: salmon;
+}
+td {
+  border-style: solid;
+  border-spacing: 5px 15px;
+}
