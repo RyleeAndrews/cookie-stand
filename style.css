@@ -34,3 +34,8 @@ td {
   border-style: solid;
   border-spacing: 5px 15px;
 }
+input {
+  background-color: black;
+  color:white;
+  width:22%;
+}
