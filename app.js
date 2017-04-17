@@ -13,8 +13,6 @@ function CookieStore(name,minCust,maxCust, avgCookieSale){
 function CookieStoreList(stores) {
   this.stores = stores;
 }
-
-
 CookieStoreList.prototype.getHourlyTotals = function(){
   var totals = [];
   for(var i = 0; i < this.stores.length; i++) {
