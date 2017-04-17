@@ -24,7 +24,6 @@ CookieStoreList.prototype.getHourlyTotals = function(){
         totals[t] = store.cookiesAnHour[t];
       }
     }
-
     if(totals[hours.length - 2]) {
       totals[hours.length - 2] = totals[hours.length - 2] + store.totalCookies;
     } else {
@@ -99,7 +98,6 @@ CookieStore.prototype.getCookiesAnHour = function(){
     this.totalCookies = this.totalCookies + totalCookies;
   }
 };
-
 CookieStore.prototype.getTableFooter = function() {
   var table = document.getElementById('table');
   var tableRow = document.createElement('tr');

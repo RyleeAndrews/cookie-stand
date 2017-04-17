@@ -1,13 +1,7 @@
 body {
   background-color: orange;
 }
-div {
-  font-family: georgia,serif;
-  display: inline;
-  margin-right: 7px;
-  background-color: lightblue;
-}
-h1,h2 {
+h1 {
   font-family: 'Montaga',serif;
   text-decoration: underline;
   color:indigo;
@@ -32,7 +26,7 @@ th {
   text-transform: uppercase;
 }
 table {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   border-collapse: collapse;
   background-color: salmon;
 }
