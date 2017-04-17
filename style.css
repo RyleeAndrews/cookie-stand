@@ -1,7 +1,7 @@
 body {
   background-color: orange;
 }
-h1,h2 {
+h1 {
   font-family: 'Montaga',serif;
   text-decoration: underline;
   color:indigo;
@@ -37,5 +37,5 @@ td {
 input {
   background-color: black;
   color:white;
-  width:22%;
+  width:25%;
 }
