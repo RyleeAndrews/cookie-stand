@@ -1,0 +1,31 @@
+body {
+  background-color: orange;
+}
+tr {
+  color:indigo;
+  padding: 2px 3px 2px 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+th {
+  color:red;
+  text-align: center;
+  font-size: 80%;
+  border-style: groove;
+  border-color: indigo;
+  text-transform: uppercase;
+}
+table {
+  letter-spacing: 0.2em;
+  border-collapse: collapse;
+  background-color: salmon;
+}
+td {
+  border-style: solid;
+  border-spacing: 5px 15px;
+}
+input {
+  background-color: black;
+  color:white;
+  width:25%;
+}

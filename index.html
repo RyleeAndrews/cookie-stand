@@ -1,28 +1,33 @@
 <html>
-<head>
-  <title>
-    Pat's Salmon Goods
-  </title>
-  <link href='style.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  <div id='app'>
-    <form id='create-store'>
-      <label for='storeName'>Name </label>
-      <input name='storeName' type='text'/>
-      <label for ='minCust'>Minimum Customers</label>
-      <input name='minCust' type='text'/>
-      <label name='maxCust'>Maximum Customers</label>
-      <input name='maxCust' type='text'/>
-      <label name='avgCookieSale'> Average Sale of Cookies </label>
-      <input name='avgCookieSale' type='text'/>
-      <button type='submit'> Add Location </button>
-    </form>
-  </div>
-  <div id='main'>
+  <head>
+    <title>
+      Pats Salmon Goods
+    </title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
     <h1> Pats Salmon Cookies </h1>
-    <img id='salmon'src='https://raw.githubusercontent.com/codefellows/seattle-201d21/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png' alt='tasty salmon'>
-  </div>
-  <script src='app.js'></script>
+    <img    id='salmon'src='https://raw.githubusercontent.com/codefellows/seattle-201d21/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png' alt='tasty salmon'>
+    <div id='reviews'>
+      <h2> customer reviews: 'The food is great!!!'
+      'Salmon cookies? Who thought they could be so good!'
+      '10 out of 10 so gooood' </h2>
+      <img src="stars.jpg">
+    </div>
+    <br />
+    <div id='loco'>
+      <h2> business locations: 1st and Pike, SeaTac, Capitol Hill, Seattle Center, and Alki. We are open from 6am to 8pm daily. </h2>
+    </div>
+    <br />
+    <div id="locoimages">
+      <img src="img_4353.jpg">
+      <img src="SeaTac-Airport.jpg">
+      <img src="caphill.jpg">
+      <img src="seattle-center.jpg">
+      <img src="alki-beach.jpg">
+    </div>
+    <div id='contact'>
+      <h2> contact info: 203-777-7777 or at patssalmoncookies@gmail.com </h2>
+    </div>
   </body>
 </html>
