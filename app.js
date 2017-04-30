@@ -112,26 +112,6 @@ CookieStore.prototype.getTableFooter = function() {
   }
   table.appendChild(tableRow);
 };
-function handleLocationCreateSubmit(submit){
-  event.preventDefault();
-  var form = submit.target;
-  var name = form.storeName.value;
-  var maxCust = form.maxCust.value;
-  maxCust = parseInt(maxCust);
-  var minCust = form.minCust.value;
-  minCust = parseInt(minCust);
-  var avgCookieSale = form.avgCookieSale.value;
-  avgCookieSale = parseInt(avgCookieSale);
-  form.storeName.value = '';
-  form.maxCust.value = '';
-  form.minCust.value = '';
-  form.avgCookieSale.value = '';
-  var cookieStore = new CookieStore(name,maxCust,minCust,avgCookieSale);
-
-  cookieStore.getTable();
-}
-var storeCreate = document.getElementById('create-store');
-storeCreate.addEventListener('submit', handleLocationCreateSubmit);
 
 firstNPike.getTableHead();
 firstNPike.getTable();

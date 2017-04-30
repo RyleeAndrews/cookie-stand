@@ -1,41 +1,23 @@
 body {
-  background-color: orange;
+  background-color: #00BFA0;
 }
 h1 {
-  font-family: 'Montaga',serif;
-  text-decoration: underline;
-  color:indigo;
-  background-color: yellow;
+  color:red;
+  font-size: 70px;
+}
+#reviews {
+  color:#FF5700;
+  font-size: 60px;
+}
+#loco {
+  color:#381023;
+  font-size: 50px;
+}
+#contact {
+  font-size: 40px;
+  color:#0E8F73;
 }
 img#salmon {
   height: auto;
   width:100%;
-}
-tr {
-  color:indigo;
-  padding: 2px 3px 2px 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
-th {
-  color:red;
-  text-align: center;
-  font-size: 80%;
-  border-style: groove;
-  border-color: indigo;
-  text-transform: uppercase;
-}
-table {
-  letter-spacing: 0.2em;
-  border-collapse: collapse;
-  background-color: salmon;
-}
-td {
-  border-style: solid;
-  border-spacing: 5px 15px;
-}
-input {
-  background-color: black;
-  color:white;
-  width:25%;
 }
