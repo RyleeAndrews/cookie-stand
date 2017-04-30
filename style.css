@@ -11,31 +11,28 @@ img#salmon {
   height: auto;
   width:100%;
 }
-tr {
-  color:indigo;
-  padding: 2px 3px 2px 2px;
-  text-align: center;
-  text-transform: uppercase;
+div#reviews {
+  color:blue;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-th {
-  color:red;
-  text-align: center;
-  font-size: 80%;
-  border-style: groove;
-  border-color: indigo;
-  text-transform: uppercase;
+div#reviews img {
+  width:50%;
+  height:100px;
 }
-table {
-  letter-spacing: 0.2em;
-  border-collapse: collapse;
-  background-color: salmon;
+div#loco {
+  color:purple;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-td {
-  border-style: solid;
-  border-spacing: 5px 15px;
+
+div#contact {
+  color:green;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-input {
-  background-color: black;
-  color:white;
-  width:25%;
+div#locoimages img {
+  height:100px;
+  width:240px;
+  display:inline-block;
 }

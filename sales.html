@@ -1,8 +1,22 @@
 <html>
   <head>
-    <link href='style.css' ref='stylesheet' type='text/css'>
+    <link href='tablestyle.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <script src='app.js'></script>
+    <div id='app'>
+      <form id='create-store'>
+        <label for='storeName'>Name </label>
+        <input name='storeName' type='text'/>
+        <label for ='minCust'>Minimum Customers</label>
+        <input name='minCust' type='text'/>
+        <label name='maxCust'>Maximum Customers</label>
+        <input name='maxCust' type='text'/>
+        <label name='avgCookieSale'> Average Sale of Cookies </label>
+        <input name='avgCookieSale' type='text'/>
+        <button type='submit'> Add Location </button>
+      </form>
+    </div>
+    <div id="main"></div>
+    <script src="app.js"></script>
   </body>
 </html>
